@@ -7,17 +7,19 @@ function HomeButton() {
 
   return (
     <button
-      onclick="buttonHandler()"
+      onClick={buttonHandler}
       title="Contact Sale"
-      class="fixed z-90 bottom-10 left-8 bg-blue-600 w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-blue-700 hover:drop-shadow-2xl hover:animate-bounce duration-300"
+      className="h-20 w-20 fixed z-1000 bottom-10 left-8 bg-blue-600 rounded-full drop-shadow-lg md:flex hidden justify-center items-center text-white hover:bg-blue-700 hover:drop-shadow-2xl hover:animate-bounce duration-300"
     >
       <ScrollLink
-        class="whatsapp_float block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
+        className="whatsapp_float"
         to="home"
         smooth={true}
         duration={500}
       >
-        <FaCircleChevronUp />
+        <FaCircleChevronUp
+          className="text-4xl"
+        />
       </ScrollLink>
     </button>
   );

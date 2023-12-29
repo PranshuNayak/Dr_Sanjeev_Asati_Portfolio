@@ -3,7 +3,7 @@ import cover from "./images/dr.jpeg";
 
 function About() {
   return (
-    <section className="bg-gray-50" id="bio">
+    <section className="bg-gray-50 w-100%" id="bio">
       <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
           <div>

@@ -22,43 +22,53 @@ function ContactMap() {
 
             <p className="text-gray-400 capitalize">
               Room No.2 , 1st floor <br />
-              bombay hospital <br/>vijaynagar, indore
-             (452010) <br />
+              bombay hospital <br />
+              vijaynagar, indore (452010) <br />
               Tel: +91 6352-932-225
             </p>
             <div className="mt-2">
-              <a
-                href="https://www.facebook.com/sanjeevasatispine/"
-                target="_blank"
-                rel="noreferrer"
-                className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
-              >
-                <FaFacebook size={40} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/dr-sanjeev-asati-94b05b15b?originalSubdomain=in"
-                target="_blank"
-                rel="noreferrer"
-                className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
-              >
-                <FaLinkedin size={40} />
-              </a>
-              <a
-                href="https://www.instagram.com/spinesurgeon_asati/?next=%2Foptiplazaoficial%2Ffeed%2F"
-                target="_blank"
-                rel="noreferrer"
-                className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
-              >
-                <FaInstagram size={40} />
-              </a>
-              <a
-                href="https://twitter.com/asati_sanjeev"
-                target="_blank"
-                rel="noreferrer"
-                className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
-              >
-                <FaXTwitter size={40} />
-              </a>
+              <ul class="mr-auto flex flex-row">
+                <li>
+                  <a
+                    href="https://www.facebook.com/sanjeevasatispine/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+                  >
+                    <FaFacebook size={40} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/dr-sanjeev-asati-94b05b15b?originalSubdomain=in"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+                  >
+                    <FaLinkedin size={40} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/spinesurgeon_asati/?next=%2Foptiplazaoficial%2Ffeed%2F"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+                  >
+                    <FaInstagram size={40} />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/asati_sanjeev"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+                  >
+                    <FaXTwitter size={40} />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

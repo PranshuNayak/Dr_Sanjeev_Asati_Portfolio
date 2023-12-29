@@ -6,39 +6,16 @@ import img1 from "./images/img1.jpeg";
 function Home() {
   return (
     <section class="mb-40" id="home">
-      <HomeButton/>
+      <HomeButton />
       <nav
         class="relative flex w-full items-center justify-between bg-white py-2 shadow-sm shadow-neutral-700/10 dark:bg-neutral-800 dark:shadow-black/30  lg:flex-wrap lg:justify-start"
         data-te-navbar-ref
       >
         <div class="flex w-full flex-wrap items-center justify-between px-6">
           <div class="flex items-center">
-            <button
-              class="block border-0 bg-transparent py-2 pr-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-              type="button"
-              data-te-collapse-init
-              data-te-target="#navbarSupportedContentY"
-              aria-controls="navbarSupportedContentY"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="[&>svg]:w-7">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="h-7 w-7"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
-            </button>
+          
 
-            <a class="text-primary dark:text-primary-400" href="#!">
+            <a class="sm:inline hidden text-primary dark:text-primary-400" href="#!">
               <span class="[&>svg]:ml-2 [&>svg]:mr-3 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:lg:ml-0">
                 <svg
                   version="1.0"
@@ -168,11 +145,9 @@ m-1259 -78 c23 -50 79 -304 72 -326 -2 -5 -17 -1 -33 9 -27 17 -31 27 -43 101
           </div>
 
           <div
-            class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
-            id="navbarSupportedContentY"
-            data-te-collapse-item
+            class=" flex-grow  items-center flex basis-auto"
           >
-            <ul class="mr-auto lg:flex lg:flex-row" data-te-navbar-nav-ref>
+            <ul class="mr-auto flex flex-row" data-te-navbar-nav-ref>
               <li data-te-nav-item-ref>
                 <ScrollLink
                   class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
@@ -226,7 +201,7 @@ m-1259 -78 c23 -50 79 -304 72 -326 -2 -5 -17 -1 -33 9 -27 17 -31 27 -43 101
             </ul>
           </div>
 
-          <div class="my-1 flex items-center lg:my-0 lg:ml-auto">
+          <div class="my-1 lg:flex hidden items-center">
             <button
               type="button"
               class="inline-block rounded bg-teal-500 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
@@ -250,15 +225,14 @@ m-1259 -78 c23 -50 79 -304 72 -326 -2 -5 -17 -1 -33 9 -27 17 -31 27 -43 101
                 <h1 class="capitalize text-xl mb-4 tracking-tight ">
                   for your spine related problems
                 </h1>
-                <a
+                <ScrollLink
                   class="mb-2 inline-block rounded bg-teal-500 px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] md:mr-2 md:mb-0"
-                  data-te-ripple-init
-                  data-te-ripple-color="light"
-                  href="#!"
-                  role="button"
+                  to="bio"
+                  smooth={true}
+                  duration={500}
                 >
                   Know your doctor
-                </a>
+                </ScrollLink>
               </div>
             </div>
             <div class="md:mb-12 lg:mb-0">

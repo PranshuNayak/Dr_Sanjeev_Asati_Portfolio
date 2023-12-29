@@ -1,6 +1,5 @@
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Whatsapp from "./components/Contact/Whatsapp";
 import Footer from "./components/Footer/Footer";
 import Gallery from "./components/Gallery/Gallery";
 import Home from "./components/Home/Home";
@@ -17,7 +16,6 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
-      <Whatsapp />
     </>
   );
 }
