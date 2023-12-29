@@ -5,7 +5,7 @@ import Whatsapp from './Whatsapp'
 function Contact() {
   return (
     <section className="bg-gray-50" id="contact">
-      {/* <Whatsapp/> */}
+      <Whatsapp/>
       <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="md:flex md:items-end md:justify-between">
           <div className="max-w-xl">

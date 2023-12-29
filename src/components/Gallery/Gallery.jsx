@@ -4,8 +4,8 @@ import Carousel from "./Carousel";
 function Gallery() {
   return (
     <section className="bg-gray-50">
-      <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16 flex items-center justify-between">
-        <div className="max-w-xl">
+      <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16 grid lg:grid-cols-2 lg:gap-8 ">
+        <div className="max-w-xl lg:mb-0 mb-10">
           <h2 className="text-4xl font-bold tracking-tight text-slate-600 sm:text-5xl">
           A Visual Journey Through the World of Discovery and Healing
           </h2>
