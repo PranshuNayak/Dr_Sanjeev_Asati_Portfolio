@@ -5,10 +5,10 @@ import Gallery from "./components/Gallery/Gallery";
 import Home from "./components/Home/Home";
 import Services from "./components/Services/Services";
 import Testimonials from "./components/Testimonials/Testimonials";
-
 function App() {
   return (
     <>
+      
       <Home />
       <About />
       <Services />

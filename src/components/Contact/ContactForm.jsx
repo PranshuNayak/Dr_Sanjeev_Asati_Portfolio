@@ -1,27 +1,33 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import { useState } from "react";
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 export const ContactForm = () => {
+  
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    toast.info("Sending message . Please wait")
     emailjs
       .sendForm(
         "service_0e6ql6h",
-        "template_oaxbh0k",
+        "spinesurgeonindore_cntct",
         form.current,
         "x8AA8lFnwjsVQ1L_-"
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .then((result) => {
+        toast.dismiss()
+        toast.success("Message sent successfully !")
+        console.log(result.text);
+      })
+      .catch((error) => {
+        toast.dismiss()
+        toast.error("Error sending the message . Please try again")
+        console.log(error);
+      });
+     
   };
 
   return (
@@ -31,33 +37,43 @@ export const ContactForm = () => {
           Send us a <br /> message
         </h1>
       </div>
-      <form ref={form} onSubmit={sendEmail}>
+      <form id="form" ref={form} onSubmit={sendEmail}>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
           <input
             className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             type="text"
             placeholder="First Name*"
+            name="first_name"
+            id="first_name"
           />
           <input
             className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             type="text"
             placeholder="Last Name*"
+            name="last_name"
+            id="last_name"
           />
           <input
             className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
             type="email"
             placeholder="Email*"
+            name="email"
+            id="email"
           />
           <input
             className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="number"
+            type="tel"
             placeholder="Phone*"
+            name="phone"
+            id="phone"
           />
         </div>
         <div className="my-4">
           <textarea
             placeholder="Message*"
             className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            name="message"
+            id="message"
           ></textarea>
         </div>
         <div className="my-2">
@@ -66,7 +82,8 @@ export const ContactForm = () => {
             className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
                       focus:outline-none focus:shadow-outline"
           >
-            Send Message
+            Submit
+            <ToastContainer />
           </button>
         </div>
       </form>
